@@ -4,6 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 function getByValue(arr, id) {
+    console.log('this is a test');
     var result  = arr.filter(function(o) { return o.id == id;} );
     return result ? result[0] : null; // or undefined
 }
