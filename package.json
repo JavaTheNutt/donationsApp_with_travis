@@ -2,7 +2,11 @@
   "name": "donationweb-3.0",
   "version": "0.0.0",
   "private": true,
-  "scripts": { },
+  "scripts": {
+    "test": "set NODE_ENV=test && mocha test/routes/donations-test.js",
+    "build:dev": "webpack",
+    "build:prod": "webpack --config webpack-prod.config.js",
+  },
   "dependencies": {
     "angular": "^1.3.10",
     "angular-route": "^1.3.10",
