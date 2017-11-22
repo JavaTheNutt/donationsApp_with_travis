@@ -4,6 +4,8 @@ node_js:
 branches:
   only:
     - development
+script:
+- npm run coverage
 notifications:
   email:
     recipients:
