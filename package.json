@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "cross-env NODE_ENV=test PORT=4000 mocha test/routes/donations-test.js", 
     "api:dev": "npm-run-all --parallel lint:watch test:watch server",
     "start": "npm-run-all --parallel lint:watch test:watch build:dev",
     "build:prod": "npm-run-all clean-dist webpack --config webpack-prod.config.js",

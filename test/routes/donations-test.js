@@ -46,7 +46,7 @@ describe('Donationss', function (){
                 });
         });
     });
-    describe('POST /donations', function () {
+    /*describe('POST /donations', function () {
         it('should return confirmation message and update datastore', function(done) {
             var donation = { 
                 paymenttype: 'Visa' , 
@@ -76,9 +76,9 @@ describe('Donationss', function (){
                     done();
                 });
         });
-    });
+    });*/
 
-    describe('PUT /donations/:id/votes', function () {
+    /*describe('PUT /donations/:id/votes', function () {
         it('should return all donations with specified donation upvoted by 1', function(done) {
             chai.request(server)
                 .put('/donations/1000001/votes')
@@ -103,7 +103,7 @@ describe('Donationss', function (){
                 });
         });
 
-    });
+    });*/
     after(function(done){
         server.close(done)
     });
